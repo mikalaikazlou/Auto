@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <meta charset="utf-8">
+    <SCRIPT>
+        var boolValue = "true";
+        function updateParentArray() {
+            opener.updateMyArray(boolValue);
+            self.close();
+        }
+        function clouseWindow() {
+            self.close();
+        }
+    </SCRIPT>
+</HEAD>
+<BODY>
+    <div>
+        <h3>Хотите добавить картинку?</h3>
+        <INPUT TYPE="SUBMIT" VALUE="Да" onClick="updateParentArray()">
+        <INPUT TYPE="SUBMIT" VALUE="Нет" onClick="clouseWindow()">
+    </div>
+</BODY>
+</HTML>

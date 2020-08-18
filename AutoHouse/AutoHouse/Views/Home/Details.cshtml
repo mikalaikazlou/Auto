@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+}
+@using Service
+<h2>Details</h2>
+<table border="1">
+    <tr>
+        <td><p>Model</p></td>
+        <td><p>Name</p></td>
+        <td><p>Price</p></td>
+        <td></td>
+    </tr>
+    
+        <tr>
+            <td><p>@ViewBag.GetCar.Model </p></td>
+            <td><p> @ViewBag.GetCar.Name </p></td>
+            <td><p> @ViewBag.GetCar.Price </p></td>
+        </tr>
+   
+</table>

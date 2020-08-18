@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoHouse", "AutoHouse\AutoHouse.csproj", "{E0B27D58-C0A3-42D2-BE9F-061025110DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{A977D1BE-B3BD-4FA0-B5CF-AEFB2C65D38F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0B27D58-C0A3-42D2-BE9F-061025110DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B27D58-C0A3-42D2-BE9F-061025110DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B27D58-C0A3-42D2-BE9F-061025110DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B27D58-C0A3-42D2-BE9F-061025110DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A977D1BE-B3BD-4FA0-B5CF-AEFB2C65D38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A977D1BE-B3BD-4FA0-B5CF-AEFB2C65D38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A977D1BE-B3BD-4FA0-B5CF-AEFB2C65D38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A977D1BE-B3BD-4FA0-B5CF-AEFB2C65D38F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12A02659-0EC8-424C-92D0-4CD0CA02C442}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+﻿@model Service.Car
+@{
+    ViewBag.Title = "UpdateCar";
+}
+
+<h2>UpdateCar</h2>
+
+@using (Html.BeginForm("UpdateCar", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <p>@Html.HiddenFor(m => m.CarId)</p>
+    <p>@Html.LabelFor(m => m.Model, "Модель")</p>
+    <p>@Html.EditorFor(m => m.Model)</p>
+    <p>@Html.LabelFor(m => m.Model, "Название")</p>
+    <p>@Html.EditorFor(m => m.Name)</p>
+    <p>@Html.LabelFor(m => m.Model, "Цена")</p>
+    <p>@Html.EditorFor(m => m.Price)</p>
+    <p><input type="submit" value="Сохранить" /></p>
+}

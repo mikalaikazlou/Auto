@@ -1,0 +1,24 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <form name="Create Car" method="post">
+            <h3>Введите модель:</h3>
+            <input type="text" name="Model" />
+            <h3>Введите название:</h3>
+            <input type="text" name="Name" />
+            <h3>Введите цену:</h3>
+            <input type="text" name="Price" />
+            <input type="submit" value="Сохранить" />
+        </form>
+        @Html.ActionLink("Назад","Index","Home")
+    </div>
+</body>
+</html>

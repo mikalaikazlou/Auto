@@ -1,0 +1,8 @@
+﻿@model  IEnumerable<Service.Car>
+@{
+    ViewBag.Title = "Test";
+}
+@foreach (var item in Model)
+{
+    @Html.DisplayNameFor(model => model.Model)@: @Html.DisplayFor(model => item.Model); @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(modelItem => item.Name);
+}

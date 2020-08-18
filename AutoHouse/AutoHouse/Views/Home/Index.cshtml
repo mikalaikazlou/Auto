@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@using Service
+<h2>Index</h2>
+
+<h4>@Html.ActionLink("Create", "Create", "Home")</h4>
+<div class="jumbotron">
+    <table border="1">
+        <tr>
+            <td><p>Car</p></td>
+            <td><p>Model</p></td>
+            <td><p>Price</p></td>
+            <td></td>
+        </tr>
+        @foreach (var b in ViewBag.Cars)
+        {
+            <tr>
+                <td><p>@b.Model </p></td>
+                <td><p> @b.Name </p></td>
+                <td><p> @b.Price </p></td>
+                <td>
+                    <p>
+                        @Html.ActionLink("Details", "Details", new { id = b.CarId })|
+                        @Html.ActionLink("Delete", "Delete", new { id = b.CarId })|
+                        @Html.ActionLink("UpdateCar", "UpdateCar", new { id = b.CarId })
+                    </p>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

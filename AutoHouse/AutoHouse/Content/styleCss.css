@@ -1,0 +1,62 @@
+html{height: 100%;}
+body{font: 14px/1 sans-serif; height: 100%; margin: 0;}
+
+.grid {
+    min-height: 100%;
+    display: grid;
+    gap: 0.5px;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: 50px auto auto 1fr;
+    grid-template-areas: "header header header header "
+                        "menuSite menuSite menuSite menuSite "
+                        "main main main main "
+                        "footer footer footer footer ";
+}
+
+
+.header {grid-area: header; background-color: black; justify-content: flex-end}
+.menuSite{grid-area: menuSite; background-color: rgb(173, 211, 233); }
+.main{grid-area: main; background-color:white; align-self: center;}
+.footer{grid-area: footer;background-color: rgb(173, 211, 233);}
+
+.header, .menuSite,.main,.footer{ 
+    display: flex;  align-content: center;
+}
+
+.menuSite div{ flex:25%; text-align: center; }
+
+.car-contaner {
+    position: relative;
+    background: 0 0 no-repeat;
+	height:500px;
+	flex:20%; 
+	transition: flex 300ms ease;
+    box-shadow: 0 0 15px 2px #000; 
+    margin: 1px; 
+}
+
+.car-contaner:hover {
+    flex: 0.1 0.1 400px;
+   background-size: 100% 100%;
+}
+.crossMark{
+    background-image: url('icon/crossM.png');
+    position: absolute;
+    right: 0;
+   height: 30px;
+   width: 30px;
+   display: block;
+   opacity: 0;
+}
+.crossMark:hover{
+position: absolute;
+right: 0;
+opacity: 1;
+}
+#imgHeader{
+    position: absolute;
+    cursor: pointer;
+   
+}
+
+
